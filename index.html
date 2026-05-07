@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Kumar Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: linear-gradient(135deg, #021a1a, #062f2f, #0aa);
+            color: #fff
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(0, 255, 220, .08);
+            backdrop-filter: blur(15px);
+            z-index: 100
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #7fffd4
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px
+        }
+
+        section {
+            padding: 120px 10%
+        }
+
+        .hero {
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+        }
+
+        .code-box {
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            max-width: 650px;
+            margin: auto;
+            box-shadow: 0 0 40px rgba(127, 255, 212, .25);
+            color: #7fffd4;
+            text-align: left
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 20px 0
+        }
+
+        h1 span {
+            color: #7fffd4
+        }
+
+        .typing {
+            font-size: 1.5rem;
+            color: #bff
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: #7fffd4;
+            color: #021a1a;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .08);
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px)
+        }
+
+        .skill-bar {
+            margin: 15px 0
+        }
+
+        .bar {
+            height: 10px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden
+        }
+
+        .fill {
+            height: 100%;
+            background: #7fffd4
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #011
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class='logo'>AK</div>
+        <nav><a href='#about'>About</a><a href='#skills'>Skills</a><a href='#projects'>Projects</a><a
+                href='#contact'>Contact</a></nav>
+    </header>
+    <section class='hero'>
+        <div class='code-box'>const developer = {<br> name:'Anuj Kumar',<br> focus:'AI + Web Development',<br>
+            skills:['Python','React','Django'],Data Analytics<br> passionate:true<br>};</div>
+        <h1>Crafting <span>Digital</span> Future</h1>
+        <div class='typing'>Web Developer | AI Builder | Tech Enthusiast</div>
+        <a class='btn' href='#projects'>Explore Work</a>
+    </section>
+    <section id='about'>
+        <h2>About Me</h2>
+        <div style='display:flex;gap:40px;align-items:center;flex-wrap:wrap'><img
+                src='WhatsApp Image 2026-05-07 at 22.54.01 copy.jpeg'
+                style='width:320px;height:420px;object-fit:cover;border-radius:25px;border:3px solid #7fffd4;box-shadow:0 0 35px rgba(127,255,212,.6);transition:.4s'
+                onmouseover='this.style.transform="scale(1.05)"' onmouseout='this.style.transform="scale(1)"'>
+            <div>
+                <p>I am a motivated BCA 2nd-year student with a strong interest in technology and software development. I have a basic understanding of Python programming and web development. I possess good communication skills, including fluency in English, and I am always eager to learn new skills and improve my knowledge. I am looking for opportunities to gain practical experience and grow in the IT field..</p>
+                <p><strong>Specialization:</strong> Python,Web Developer</p><br>
+                <p>📞 YOUR_CONTACT</p>
+                <p>📧 YOUR_EMAIL</p>
+                <p>💼 LINKEDIN_PROFILE</p>
+            </div>
+        </div>
+    </section>
+    <section id='skills'>
+        <h2>Skills</h2>
+         <div class='skill-bar'>HTML<div class='bar'>
+                <div class='fill' style='width:90%'></div>
+            </div>
+         <div class='skill-bar'>CSS<div class='bar'>
+                <div class='fill' style='width:90%'></div>
+            </div>
+             <div class='skill-bar'>JAVA SCRIPT<div class='bar'>
+                <div class='fill' style='width:90%'></div>
+            </div>
+        <div class='skill-bar'>Python<div class='bar'>
+                <div class='fill' style='width:90%'></div>
+            </div>
+        </div>
+        <div class='skill-bar'>C#<div class='bar'>
+                <div class='fill' style='width:80%'></div>
+            </div>
+        </div>
+        <div class='skill-bar'>C PROGRAMMING<div class='bar'>
+                <div class='fill' style='width:85%'></div>
+            </div>
+        </div>
+    </section>
+    <section id='projects'>
+        <h2>Projects</h2>
+        <div class='cards'>
+            <div class='card'>
+                <h3>Hospital Management System</h3>
+                <p>Python-based hospital management software for patient records, appointments and administration.</p><a
+                    class='btn' href='https://github.com/anuj961/Hospital-Management-System-Using-Python'
+                    target='_blank'>View Project</a>
+            </div>
+            <div class='card'>AI Assistant</div>
+        </div>
+    </section>
+    <section id='contact'>
+        <h2>Contact Me</h2>
+        <form><input placeholder='Your Name'><input placeholder='Your Email'><textarea
+                placeholder='Your Message'></textarea><a class='btn'>Send Message</a></form><br>
+        <div class='card'>
+           <p>📞 +91 7651810150</p>
+            <p>📧 anujkumar@gmail.com</p>
+            <p>💼 linkedin.com/in/anujkumar</p>
+            <p>🔗 github.com/anuj961</p>
+        </div>
+    </section>
+    <footer>© 2026 Anuj Kumar</footer>
+</body>
+
+</html>
